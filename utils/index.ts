@@ -1,5 +1,6 @@
 import { CarProps } from "@/app/types";
 
+
 export const calculateCarRent = ( city_mpg: number, year: number, highway_mpg: number ) => {
 
 	const basePricePerDay = 50; // Base rental price per day in dollars
@@ -33,10 +34,10 @@ export async function fetchCars() {
 }
 
 
- /* export const generateCarImageUrl = (car: CarProps, angle?:string) => {
+ export const generateCarImageUrl = (car: CarProps, angle?:string) => {
   const url = new URL ('https://cdn.imagin.studio/car-image-api')
   
-  const { make, year, model } = car
+  const { make, model, year } = car;
   
   url.searchParams.append('customer', 'hrjavascript-mastery')
   url.searchParams.append('make', make)
@@ -46,4 +47,4 @@ export async function fetchCars() {
   url.searchParams.append('angle', `${angle}`)
   
   return `${url}`;
-  } */
+  } 
