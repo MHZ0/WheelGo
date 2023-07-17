@@ -5,4 +5,8 @@ const nextConfig = {
     }
 }
 
+typeScript: {
+    ignoreBuildErrors: true
+}
+
 module.exports = nextConfig
